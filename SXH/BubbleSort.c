@@ -10,7 +10,7 @@ void trace(int A[],int count){
 void BubbleSort(int A[],int count){
     int flag = 1,temp;
     while(flag==1){
-        flag = 0;
+        flag =0;
         for (int i = 1; i < count; i++){
             if(A[i-1] > A[i]){
                 temp = A[i];
