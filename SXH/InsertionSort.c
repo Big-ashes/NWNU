@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void trace(int A[], int count) {
+void trace(int *A, int count) {
     for (int i = 0; i < count; i++) {
         printf("%d ", A[i]);
     }
     printf("\n");
 }
 
-void insertionSort(int A[], int count) {
+void insertionSort(int *A, int count) { // *A == A[]
     int j, v;
     for (int i = 1; i < count; i++) {
         v = A[i];
@@ -22,7 +22,7 @@ void insertionSort(int A[], int count) {
 }
 
 int main() {
-    int arr[100];
+    int arr[100]={0};
     int count;
     scanf("%d", &count);
 
